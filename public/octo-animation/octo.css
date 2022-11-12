@@ -1,0 +1,98 @@
+
+body{
+    background: none;
+}
+
+.layer{
+    position:relative;
+    width:500px;
+    display: block;
+    margin: 0 auto;
+}
+
+#head{
+    animation-name:appear;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+.eye{
+    animation-name: fadein;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+#Arm4{
+    animation-delay: 3.8s;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+#Arm3{
+    animation-delay: 3.6s;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+
+#Arm2{
+    animation-delay: 3.4s;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+
+#Arm1{
+    animation-name: appear;
+    animation-delay: 3.2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    transform-origin: center;
+}
+
+
+#crown{
+    animation-delay: 4.8s;
+    animation-name: easein;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@keyframes appear{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes easein{
+
+    0%{transform: scale(0);}
+
+    50%{transform: scale(0.99);}
+
+    100%{transform: scale(1);}
+
+}

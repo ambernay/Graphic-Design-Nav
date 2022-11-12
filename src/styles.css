@@ -1,0 +1,204 @@
+/* *{border: 1px solid red;} */
+
+/* #region *//*prevent default page behaviours*/
+
+/*prevents page from moving*/
+html, body{
+    height: 100%;
+    /* to prevent scroll bounce */
+    overflow: hidden;
+}
+#root{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* overflow: auto; */
+    overflow-anchor: auto;
+}
+/* removes tabindex styles */
+*[tabindex]:focus {
+    outline: none;
+}
+/* #endregion *//* prevents page from moving*/
+
+/* #region *//* defining variables */
+
+:root {
+    /* color */
+    --dark-gray:#2a2a2a;
+    --light-gray:#a6a6a6;
+    --off-white:#f2f2f2;
+    --orange:#e65c00;
+    /* sizes */
+    --heading-height: 13vh;
+    --footer-height: 10vh;
+    --head-and-foot-width: 97%;
+    /* padding and margins */
+    --head-and-foot-margin: 0 1.5%
+}
+/* #endregion *//* defining variables */ 
+
+body{
+    background-color: var(--dark-gray);
+    font-family: Poiret One,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        ". photo ."
+        ". nextLink nextLink"
+        "footer footer footer";
+    grid-template-rows: var(--heading-height) 70vh 7vh var(--footer-height);
+    grid-template-columns: 15vw 70vw 15vw;
+}
+/* #region *//* heading */
+.heading-wrapper{
+    display: grid;
+    grid-template-areas:
+        "title home-button";
+    grid-template-rows: 100%;
+    grid-template-columns: 70vw 30vw;
+    /* position */
+    grid-area: header;
+    border-bottom: 1px solid var(--light-gray);
+    align-items: center;
+    margin: var(--head-and-foot-margin);
+    /* to make header sticky */
+    position: fixed;
+    top: 0;
+    width: var(--head-and-foot-width);
+    height: var(--heading-height);
+    background-color: var(--dark-gray);
+    z-index: 10; 
+}
+
+.heading, .home-link, .nav-link{
+    font-size: 5vmin;
+    font-style: normal;
+    line-height: 1.42857143;
+    color: var(--light-gray);
+}
+
+.title {
+    grid-area: title;
+    text-align: left; 
+    padding-left: 1.5%;
+}
+
+.home-link{
+    grid-area: home-button;
+}
+/* #endregion *//* heading */
+
+/* #region *//* images */
+    .image-wrapper {
+        grid-area: photo;
+    }
+
+    .img-space {
+        display: grid;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .gallery_img, .animation{
+        position: absolute;
+        height: 65vh;
+        /* for alt text */
+        color: var(--light-gray); 
+    }
+    /* #region *//* animation */
+        .animation {
+            border: none;
+            width: 100%;
+        }
+    /* #endregion *//* animation */
+/* #endregion *//* images */
+
+/* #region all links */
+    .links { 
+        /* sets link underline thickness */
+        text-decoration-thickness: from-font;
+        color: var(--light-gray);
+    }
+
+    .links:hover{
+        color: var(--orange);
+    }
+        /* home and nav links */
+    .home-link, .nav-link {
+        text-align: right;
+        padding-right: 15%;
+    }
+/* #endregion all links */
+
+/* #region *//* footer and links */
+
+    .img-links-wrapper {
+        grid-area: footer;
+        text-align: center;
+        /* for sticky footer */
+        position: fixed;
+        bottom: 0;
+        width: var(--head-and-foot-width);
+        height: var(--footer-height);
+        /* footer style and position links */
+        background-color: var(--dark-gray);
+        border-top: 1px solid var(--light-gray);
+        margin: var(--head-and-foot-margin);
+    }
+
+    .nav-link-wrapper {
+        grid-area: nextLink;
+        align-self: end;
+        justify-self: end;
+        white-space: nowrap;
+        padding-right: 15px;
+    }
+
+    .img-link {
+        display: inline-grid;
+        font-size: 3vh;
+        margin: 2.5% 10%;
+    }
+/* #endregion *//* footer and links */
+
+/* #region */    
+    .arrow {
+        border: solid var(--light-gray);
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        position: absolute;
+        padding: 12px;
+    }
+    
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin: 1vh 15vw;
+    }
+    
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin: 1vh -15vw;
+    }
+
+    .arrow:hover {
+        border: solid var(--orange);
+        border-width: 0 5px 5px 0;
+        display: inline-block;
+        position: absolute;
+        padding: 12px;
+    }
+
+/* endregion - arrow buttons */
+
+/* #endregion *//* footer and links */
