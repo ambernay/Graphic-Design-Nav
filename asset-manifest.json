@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Graphic-Design-Nav/static/css/main.23fcca61.css",
-    "main.js": "/Graphic-Design-Nav/static/js/main.e4b253b5.js",
-    "static/media/Shining_Typewriter.svg": "/Graphic-Design-Nav/static/media/Shining_Typewriter.5b6c70453105fe7f8e5fd3c2fb1ba3f1.svg",
-    "static/media/2_Hangry.jpg": "/Graphic-Design-Nav/static/media/2_Hangry.dec3dce9a0424c9287b8.jpg",
-    "static/media/1_Hangry.jpg": "/Graphic-Design-Nav/static/media/1_Hangry.330581e515e0972c7235.jpg",
-    "static/media/3_Hangry.jpg": "/Graphic-Design-Nav/static/media/3_Hangry.139a97d5d9f8356ed855.jpg",
-    "static/media/red_wine_final.svg": "/Graphic-Design-Nav/static/media/red_wine_final.168fc00a5e6fec8f868e91fbda9efa34.svg",
-    "static/media/Whisky_Final.jpg": "/Graphic-Design-Nav/static/media/Whisky_Final.3803848c5c365428633b.jpg",
-    "static/media/mac-desktop.svg": "/Graphic-Design-Nav/static/media/mac-desktop.8068f32451300081f3c537749aa2648f.svg",
-    "index.html": "/Graphic-Design-Nav/index.html",
-    "main.23fcca61.css.map": "/Graphic-Design-Nav/static/css/main.23fcca61.css.map",
-    "main.e4b253b5.js.map": "/Graphic-Design-Nav/static/js/main.e4b253b5.js.map"
+    "main.css": "http://localhost:3000/static/css/main.5c612d32.css",
+    "main.js": "http://localhost:3000/static/js/main.3cb86b01.js",
+    "static/media/Shining_Typewriter.svg": "http://localhost:3000/static/media/Shining_Typewriter.5b6c70453105fe7f8e5fd3c2fb1ba3f1.svg",
+    "static/media/2_Hangry.jpg": "http://localhost:3000/static/media/2_Hangry.dec3dce9a0424c9287b8.jpg",
+    "static/media/1_Hangry.jpg": "http://localhost:3000/static/media/1_Hangry.330581e515e0972c7235.jpg",
+    "static/media/3_Hangry.jpg": "http://localhost:3000/static/media/3_Hangry.139a97d5d9f8356ed855.jpg",
+    "static/media/red_wine_final.svg": "http://localhost:3000/static/media/red_wine_final.168fc00a5e6fec8f868e91fbda9efa34.svg",
+    "static/media/Whisky_Final.jpg": "http://localhost:3000/static/media/Whisky_Final.3803848c5c365428633b.jpg",
+    "static/media/mac-desktop.svg": "http://localhost:3000/static/media/mac-desktop.8068f32451300081f3c537749aa2648f.svg",
+    "index.html": "http://localhost:3000/index.html",
+    "main.5c612d32.css.map": "http://localhost:3000/static/css/main.5c612d32.css.map",
+    "main.3cb86b01.js.map": "http://localhost:3000/static/js/main.3cb86b01.js.map"
   },
   "entrypoints": [
-    "static/css/main.23fcca61.css",
-    "static/js/main.e4b253b5.js"
+    "static/css/main.5c612d32.css",
+    "static/js/main.3cb86b01.js"
   ]
 }
