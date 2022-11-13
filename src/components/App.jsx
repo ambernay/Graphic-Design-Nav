@@ -8,7 +8,7 @@ function App(){
 
     const location = useLocation();
     
-    // Simplifies location pathname - pass to <Heading> and <Gallery>
+    // Simplifies location hash - pass to <Heading> and <Gallery>
     // 1st replace hyphens with spaces, 2nd remove special characters, 3rd capitalize first letter of every word
     const pageTitle = location.hash.replace(/-/g, ' ').replace(/[^a-zA-Z ]/g, "").replace(/(^\w{1})|(\s{1}\w{1})|(?:- |\d\. ).*/g, match => match.toUpperCase());
 

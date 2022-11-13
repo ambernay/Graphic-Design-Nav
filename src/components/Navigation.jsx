@@ -13,9 +13,9 @@ function NavBar(props){
 
 function PageLinks(props){
 
-    const VectorArt = "/vector-art";
-    const CatSays = "/cat-says-moo";
-
+    const VectorArt = "#/vector-art";
+    const CatSays = "#/cat-says-moo";
+ 
     const linkList = [VectorArt, CatSays];
 
     const currentPgIdx = linkList.indexOf(props.currentPage);
