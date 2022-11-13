@@ -27,7 +27,7 @@ function Gallery(props){
             [HangryPart3, "Hangry Part 3"]
         ]
     };
-
+    console.log(props.currentPage);
     // gets the url location and removes spaces
     const pageRequest = props.pageTitle.replace(/\s/g, '');
     const imgRequest = parseInt(props.imageRequest);
