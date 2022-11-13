@@ -31,7 +31,7 @@ function App(){
                 urlTitle= {pageTitle}
             />
             <Gallery 
-                currentPage = {location.pathname}
+                currentPage = {location.hash}
                 imageRequest = {imageNum}
                 pageTitle = {pageTitle}
             />
@@ -40,7 +40,7 @@ function App(){
                 prevImg={((e) => decreaseImageNum(e))}
             />
             <PageLinks 
-                currentPage = {location.pathname}
+                currentPage = {location.hash}
             />
         </div>
     );
