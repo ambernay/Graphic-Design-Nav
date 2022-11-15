@@ -11,7 +11,7 @@ import HangryPart3 from "../images/the-cat-says-moo/3_Hangry.jpg";
 
 function Gallery(props){
 
-    const OctoKaiserLogoAnimation = "/octo-animation/Octo-animation.html";
+    const OctoKaiserLogoAnimation = "octo-animation/Octo-animation.html";
 
     const imageDatabase = {
         VectorArt: [
