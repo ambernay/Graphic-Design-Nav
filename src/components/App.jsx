@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Heading from "./Heading";
 import { NavBar, PageLinks } from "./Navigation";
@@ -14,7 +14,7 @@ function App(){
 
     // #region - generate number for button press
     const [imageNum, setImageNum] = useState(0);
-
+    
     function increaseImageNum() {
         setImageNum(imageNum + 1);
     }
@@ -40,7 +40,8 @@ function App(){
                 prevImg={((e) => decreaseImageNum(e))}
             />
             <PageLinks 
-                currentPage = {location.hash}
+                resetImgNum = {((e) => {setImageNum(0);})}
+                currentPage = {location.hash} 
             />
         </div>
     );

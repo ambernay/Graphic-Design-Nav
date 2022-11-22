@@ -211,16 +211,3 @@ body{
     /* endregion - arrow buttons */
 /* #endregion - footer and links */
 
-/* #region media queries */
-
-@media (max-width: 600px){
-    .heading-wrapper {
-        background-color: pink;
-    }
-    .gallery_img {
-        width: 90vw;
-    }
-}
-
-
-/* #endregion media queries */

@@ -29,7 +29,7 @@ function PageLinks(props){
 
      return(
         <div className="nav-link-wrapper">
-            <Link to={nextPage} className="nav-link links">{nextLinkTitle} {'>'}</Link>
+            <Link to={nextPage} onClick={props.resetImgNum} className="nav-link links">{nextLinkTitle} {'>'}</Link>
         </div>
      )
 }
