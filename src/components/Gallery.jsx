@@ -40,7 +40,7 @@ function Gallery(props){
     const imgAlt = imageDatabase[pageRequest][imgNum][1];
 
     // chooses between img or iframe(for html animation)
-    const imageTag = <img src={imageSource} alt={imgAlt} className="gallery_img"></img>;
+    const imageTag = <img src={imageSource} alt={imgAlt} className={pageRequest}></img>;
     const iFrameTag = <iframe src={imageSource} title={imgAlt} className="animation"></iframe>;
     const imageType = ( imageSource === OctoKaiserLogoAnimation ) ? iFrameTag : imageTag;
 
