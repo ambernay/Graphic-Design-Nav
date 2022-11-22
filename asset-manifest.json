@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Graphic-Design-Nav/static/css/main.97b32ab1.css",
-    "main.js": "/Graphic-Design-Nav/static/js/main.b66addfa.js",
+    "main.css": "/Graphic-Design-Nav/static/css/main.f2cc7cd3.css",
+    "main.js": "/Graphic-Design-Nav/static/js/main.827c1a6f.js",
     "static/media/Shining_Typewriter.svg": "/Graphic-Design-Nav/static/media/Shining_Typewriter.5b6c70453105fe7f8e5fd3c2fb1ba3f1.svg",
     "static/media/2_Hangry.jpg": "/Graphic-Design-Nav/static/media/2_Hangry.dec3dce9a0424c9287b8.jpg",
     "static/media/1_Hangry.jpg": "/Graphic-Design-Nav/static/media/1_Hangry.330581e515e0972c7235.jpg",
@@ -10,11 +10,11 @@
     "static/media/Whisky_Final.jpg": "/Graphic-Design-Nav/static/media/Whisky_Final.3803848c5c365428633b.jpg",
     "static/media/mac-desktop.svg": "/Graphic-Design-Nav/static/media/mac-desktop.8068f32451300081f3c537749aa2648f.svg",
     "index.html": "/Graphic-Design-Nav/index.html",
-    "main.97b32ab1.css.map": "/Graphic-Design-Nav/static/css/main.97b32ab1.css.map",
-    "main.b66addfa.js.map": "/Graphic-Design-Nav/static/js/main.b66addfa.js.map"
+    "main.f2cc7cd3.css.map": "/Graphic-Design-Nav/static/css/main.f2cc7cd3.css.map",
+    "main.827c1a6f.js.map": "/Graphic-Design-Nav/static/js/main.827c1a6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b32ab1.css",
-    "static/js/main.b66addfa.js"
+    "static/css/main.f2cc7cd3.css",
+    "static/js/main.827c1a6f.js"
   ]
 }
