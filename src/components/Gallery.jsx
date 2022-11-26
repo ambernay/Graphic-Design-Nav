@@ -34,14 +34,16 @@ function Gallery(props){
 
     //gets length of requested dictionary 
     const dictLength = imageDatabase[pageRequest].length;
-    // calculates to zero once imgRequest reaches dictLength
+    // calculates to last image when belwo zero and to zero once imgRequest reaches dictLength
+    // const imgNum = imgRequest < 0 ? (dictLength - 1) : imgRequest % dictLength;
     const imgNum = imgRequest % dictLength;
+
     const imageSource = imageDatabase[pageRequest][imgNum][0];
     const imgAlt = imageDatabase[pageRequest][imgNum][1];
 
     // chooses between img or iframe(for html animation)
-    const imageTag = <img src={imageSource} alt={imgAlt} className={pageRequest}></img>;
-    const iFrameTag = <iframe src={imageSource} title={imgAlt} className="animation"></iframe>;
+    const imageTag = <img src={imageSource} alt={imgAlt} id={imageDatabase[pageRequest].length} className={pageRequest} onLoad={e => props.getDictLength(e)}></img>;
+    const iFrameTag = <iframe src={imageSource} title={imgAlt} id={imageDatabase[pageRequest].length} className="animation" onLoad={e => props.getDictLength(e)} ></iframe>;
     const imageType = ( imageSource === OctoKaiserLogoAnimation ) ? iFrameTag : imageTag;
 
     return (
