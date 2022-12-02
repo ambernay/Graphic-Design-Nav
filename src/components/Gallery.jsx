@@ -35,20 +35,26 @@ function Gallery(props){
     //gets length of requested dictionary 
     const dictLength = imageDatabase[pageRequest].length;
     // calculates to last image when belwo zero and to zero once imgRequest reaches dictLength
-    // const imgNum = imgRequest < 0 ? (dictLength - 1) : imgRequest % dictLength;
     const imgNum = imgRequest % dictLength;
 
     const imageSource = imageDatabase[pageRequest][imgNum][0];
     const imgAlt = imageDatabase[pageRequest][imgNum][1];
 
     // chooses between img or iframe(for html animation)
-    const imageTag = <img src={imageSource} alt={imgAlt} id={imageDatabase[pageRequest].length} className={pageRequest} onLoad={e => props.getDictLength(e)}></img>;
-    const iFrameTag = <iframe src={imageSource} title={imgAlt} id={imageDatabase[pageRequest].length} className="animation" onLoad={e => props.getDictLength(e)} ></iframe>;
+    // id and onLoad passes length of current list into App
+    // key moves on to next image before image has loade
+    const imageTag = <img src={imageSource} key={imageSource} alt={imgAlt} id={imageDatabase[pageRequest].length} className={`${pageRequest} currentImage`} onLoad={e => {props.getDictLength(e); props.isImageLoading(e)}} ></img>;
+    const iFrameTag = <iframe src={imageSource} key={imageSource} title={imgAlt} id={imageDatabase[pageRequest].length} className="animation currentImage" onLoad={e => {props.getDictLength(e); props.isImageLoading(e)}} ></iframe>;
     const imageType = ( imageSource === OctoKaiserLogoAnimation ) ? iFrameTag : imageTag;
 
     return (
         <div className="image-wrapper">
             <div className="img-space">
+                {/* #region - for loading screen */}
+                <span className="loader" style = {{display:props.loaderVisibility}}>
+                    <span className="loader-inner"></span>
+                </span>
+                {/* #endregion - for loading screen */}
                 {imageType}
             </div>
         </div>

@@ -5,8 +5,8 @@ function NavBar(props){
 
     return (
         <div className="img-links-wrapper">
-            <p><i className="arrow right" onClick={props.nextImg}></i></p>
-            <p><i className="arrow left" onClick={props.prevImg}></i></p>
+            <p><i className="arrow right" onClick={e => {props.nextImg(e); props.isImageLoading(e)}}></i></p>
+            <p><i className="arrow left" onClick={e => {props.prevImg(e); props.isImageLoading(e)}}></i></p>
         </div>
     )
 }
@@ -29,7 +29,7 @@ function PageLinks(props){
 
      return(
         <div className="nav-link-wrapper">
-            <Link to={nextPage} onClick={props.resetImgNum} className="nav-link links">{nextLinkTitle} {'>'}</Link>
+            <Link to={nextPage} className="nav-link links" onClick={e => {props.resetImgNum(e); props.isImageLoading(e)}}>{nextLinkTitle} {'>'}</Link>
         </div>
      )
 }
