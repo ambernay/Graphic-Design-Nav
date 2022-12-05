@@ -212,6 +212,7 @@ body{
 /* #endregion - footer and links */
 
 /* #region loadscreen for images */
+/* Square Loader by Tashfeen on codepen - https://codepen.io/tashfene/pen/raEqrJ */
 .loader {
     display: inline-block;
     width: 30px;
